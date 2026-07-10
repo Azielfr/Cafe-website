@@ -1,0 +1,16 @@
+table, td, td {
+    border-bottom:  1px solid black;
+    border-collapse: collapse;
+}
+table {
+    margin-left: 300px;
+    width: 400px;
+    height: 160px;
+}
+td {
+    text-align: center;
+}
+th{
+    background-color: black;
+    color: white;
+}

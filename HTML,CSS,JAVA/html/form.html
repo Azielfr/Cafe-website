@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--
+    form - defines form in html
+    inpute - defines input field in html eg text, password , email, number, date, file, etc
+    button- defines button in html, eg submit, reset
+    action-  define the url wher the form data is submitted.
+    method- define methods of submission eg: fet, post in input tag - id is unique identifier, placeholder is the text that appears in the input field, name is the input field used to identify data after submission.
+    -->
+    
+    <h1>Form Day 1 in HTML</h1>
+    <form action="/action.php" method="post"> <!-- get shows password in url post doesnt so post better-->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Ram bahadur" name="name" required>
+        <br>
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" placeholder="******" required>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="100" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        <br>
+        <label for="contact">Contact</label>
+        <input type="tel" name="contact" id="Contact" minlength="9" maxlength="10" placeholder="9800990099" required>
+        <br>
+        <label for="DOB">Date</label>
+        <input type="date" name="DOB" id="DOB">
+        <!-- <input type="datetime-local" name="DOB" id="DOB">
+        <input type="datetime" name="DOB" id="DOB"> -->
+        <br>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" rows="10" cols="10" placeholder="Enter your bio..."></textarea>
+        <br>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="Communication Skills"></label>
+        <input type="range" name="" id="" min="0" max="100" step="20">
+        <br>
+        <label for="Gender"></label>
+        <br>
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female" value="Female">
+        <label for="Female">Female</label>
+        <br>
+        <label for="">Skills</label>
+        <br>
+        <input type="checkbox" name="Skills" id="Python" value="Python">
+        <label for="Python">Python</label>
+        <br>
+        <input type="checkbox" name="Skills" id="database" value="database">
+        <label for="database">database</label>
+        <br>
+        <input type="checkbox" name="Skills" id="time management" value="time managament">
+        <label for="time managament">Time management</label>
+        <br>
+        <input type="checkbox" name="Skills" id="java" value="java">
+        <label for="java">java</label>
+        <br>
+        <input type="checkbox" name="Skills" id="php" value="php">
+        <label for="php">php</label>
+        <br>
+        <input type="checkbox" name="Skills" id="aura" value="aura">
+        <label for="aura">aura</label>
+        <br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="">Select</option>
+
+            <optgroup label="Asia">Asia</optgroup>
+
+            <option value="Nepal">Nepal</option>
+            <option value="China">China</option>
+
+            <optgroup label="Europe">Europe</optgroup>
+
+            <option value="Poland">Poland</option>
+            <option value="Germany">Germany</option>
+            
+            <optgroup label="America">America</optgroup>
+
+            <option value="US">US</option>
+            <option value="Canada">Canada</option>
+
+            <optgroup label="South America">South America</optgroup>
+            
+            <option value="Brazil">Brazil</option>
+            <option value="South">Argentina</option>
+            
+            <optgroup label="Africa">Africa</optgroup>
+
+            <option value="Somaliya">Somaliya</option>
+            <option value="Niger">Niger</option>
+
+            <optgroup label="Australia">Australia</optgroup>
+
+            <option value="Australia">Australia</option>
+            <option value="Newzealand">Newzealand</option>
+            
+            
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

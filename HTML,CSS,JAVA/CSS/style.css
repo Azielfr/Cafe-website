@@ -1,0 +1,18 @@
+h3{
+    background-color: yellow;
+}
+/* universal css*/
+*{
+    background-color: pink;
+    color: white;
+}
+/*Id selector (use'#' before id name)*/
+#id-selector{
+    background-color: tomato;
+}
+/*class selector (use '.' before class name)*/
+.class__selector{
+    background-color: lightgreen;
+}
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/HTML,CSS,JAVA/img/favicon.ico" type="image/x-icon">
+    <style>
+        .outer{
+            height: 400px;
+            width: 400px;
+            border: 1px dashed red;
+        }
+        .inner{
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Height, width, Border and unit</h1>
+    <p>Height, width and Border</p>
+
+    <div class="outer">
+        <p>Outer Box</p>
+        <div class="inner">
+            <p>Inner Box</p>
+        </div>
+    </div>
+    <h3>Unit in CSS</h3>
+    <!-- Two Types of unit:
+     a) Absolute Unit: Fixed Unit:  px, mm, inch, cm, etc.
+     b) Relative Unit: Not Fixed unit: %, em, rem, vh, wv, etc.
+      -->
+     <p>em</p>
+     <div class="Parent" style="font-size: 30px;">
+        <p>I am Parent.</p>
+        <div class="Child" style="font-size: 0.5em;">
+            <p>I am Child.</p>
+            <p style="font-size: 2rem;">Rem Unit</p>
+        </div>
+     </div>
+
+     <p>viewport width (vw) and viewport Height (vh)</p>
+    
+     <div class="Box" style="height: 96vh; width: 96vw; border: 1px solid black;">
+        <div class="Childbox" style="height: 50vh; width: 50vw; border: 1px solid black;">
+
+        </div>
+     </div>
+     <!-- Relative units:
+      em- refrence font size of parent, 1em- Font size of parent.
+      rem- Refrenxe font size of root element, 1rem- font size of root element.
+      vw- refrence viewpoint width of screen, 100vw- screen visible width.
+      vh- refrence viewpoint height of screen. 100vh- screen visible height. -->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Position style */
+
+#ancestor{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+
+/* absolute position */
+#absolute{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+/* relative position */
+#relative{
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Fixed position */
+#fixed{
+    width: 250px;
+    height: 100px;
+    border: 1px solid black;
+    position: fixed;
+    top: 10px;
+    background-color: green;
+    z-index: -1;
+    /* z index brings the position of an element forward and backward,
+    -ve value - backward 
+    +ve value - forward*/
+}
+
+/* sticky Position  */
+#sticky{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    position: sticky;
+    top: 200px;
+}

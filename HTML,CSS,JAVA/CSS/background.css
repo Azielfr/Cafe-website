@@ -1,0 +1,42 @@
+/* Background Image */
+/* 1. Background-image */
+/* 2. Background-size */
+/* 3. Background-repeat */
+/* 4. Background-position */
+/* 5. Background-attachment */
+.background-img{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(../img/R.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    /* repeat-x = repeats in x axis
+    repeat-y re[eats in y axis
+    no-repeat doesnt repeat at all*/
+    
+    /* fixed */
+    background-attachment: fixed;
+}
+/* Background Position */
+.bg-postion{    
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(../img/R.jpg);   
+}
+#cover{
+    background-size: cover;
+}
+#contain{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+body{
+    background-image: url(../img/R.jpg);
+    background-size: 400px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}

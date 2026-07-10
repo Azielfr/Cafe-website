@@ -1,0 +1,122 @@
+/* Flexbox*/
+
+.container{
+    width: 800px;
+    height: 450px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#row{
+    flex-direction: row;
+}
+
+#column{
+    flex-direction: column;
+}
+
+#Column-reverse{
+    flex-direction: column-reverse;
+}
+
+#row-reverse{
+    flex-direction: row-reverse;
+}
+#justify{
+    justify-content: end;
+
+}
+#end{
+    justify-content: end;
+}
+#center{
+    justify-content: center;
+}
+#Space-around{
+    justify-content: space-around;
+}
+#Space-between{
+    justify-content: space-between;
+}
+#Space-evenly{
+    justify-content: space-evenly;
+}
+
+#align-items{
+    align-items: start;
+}
+#flex-end{
+    align-items: flex-end;
+}
+#align-center{
+    align-items: center;
+}
+#stretch{
+    align-items: stretch;
+}
+.box1{
+    width: 100px;
+    border: 1px solid black;
+}
+
+/* flex wrap */
+.container1{
+    width: 450px;
+    height: 350px;
+    border: 1px solid black;
+    display: flex;
+}
+#nowrap{
+    flex-wrap: nowrap;
+}
+#wrap{
+    flex-wrap: wrap;
+    align-content: start;
+}
+/* align content - this attribute is used when flex wrap value is wrap pr wrap-reverse. It helps us multi-line item alignment in cross axis. Value : Flex-start, flex-end , center, space -around, space-between, space-evenly.*/
+#wrap-reverse{
+    flex-wrap: wrap-reverse 
+}
+#align-self{
+    align-self: end;
+}
+
+/* Flex grow */
+.container2{
+    width: 80vw;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+}
+#fgrow1{
+    flex-grow: 1;
+}
+#fgrow2{
+    flex-grow: 2;
+}
+#fgrow3{
+    flex-grow: 3;
+}
+
+/* Flex shrink */
+.container3{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+}
+#fshrink1{
+    flex-shrink: 0;
+}
+#fshrink2{
+    flex-shrink: 1;
+}
+#fshrink3{
+    flex-shrink: 2;
+}

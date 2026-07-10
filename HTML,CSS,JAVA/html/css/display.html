@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: lightgreen;
+        }
+        span{
+            background-color: red;
+        }
+        #Inline{
+            display: inline;
+            width: 500px;
+            height: 100px;
+        }
+        #Inline-Block{
+            display: inline-block;
+            width: 500px;
+            height: 100px;
+        }
+        #Block{
+            display: block;
+            
+        }
+        #None{
+            display: none;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <!-- Block level Element vs Inline Element
+     Block lebel Element - covers whole width , appers in new line. Eg. h1-h6, p, table
+     Inline element - Covers only the exact width and height of content, does not appear in newline. Eg. Span, img, i, strong etc -->
+    <p>
+        <span>Sachin</span>
+        <span>Gaha</span>
+        <span>Magar</span>
+    </p>
+    <h3>Inline</h3>
+    <p id="Inline">
+        <span>Sachin</span>
+        <span>Gaha</span>
+        <span>Magar</span>
+    </p>
+    <hr>
+    <h3>Inline Block</h3>
+    <p id="Inline-Block">
+        <span>Sachin</span>
+        <span>Gaha</span>
+        <span>Magar</span>
+    </p>
+    <hr>
+    <h3>Block</h3>
+    <p id="Block">
+        <span>Sachin</span>
+        <span>Gaha</span>
+        <span>Magar</span>
+    </p>
+    <hr>
+    <h3>None</h3>
+    <p id="None">
+        <span>Sachin</span>
+        <span>Gaha</span>
+        <span>Magar</span>
+    </p>
+
+    <!-- Display
+1. inline - helps to arrange block level elements within a line. height and width attributes are not applicable
+2. block - helps to arrange inline/ inline-block elements in a block level elements. appears in a new line
+3. inline-block - helps to arrange block level elements within a line. height and width attributes are applicable
+4. none - hides the content. -->
+</body>
+</html>

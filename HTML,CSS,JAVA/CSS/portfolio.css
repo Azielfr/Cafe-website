@@ -1,0 +1,114 @@
+/* Protfolio style */
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/* Navigation Menu */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* weight And Height */
+    width: 100vw;
+    height: 10vh;
+    /* Colors */
+    background-color: grey;
+    color:black;
+    /* Position */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Main Section */
+/* Main Content */
+main{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+/* A. Image */
+.img{
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/temp_image_ED6B2C33-7799-4353-87A0-D5CA8088C043.webp');
+    background-size: cover;
+    border: 5px solid black;
+    border-radius: 50%;
+    /* Position */
+    position: fixed;
+    top: 12vh;
+    left: 3vw;
+}
+
+/* B. Content */
+.content{
+    width: 60%;
+    position: relative;
+    top: 20vh;
+    left: 20vw;
+
+}
+
+h1{
+    color: black;
+}
+
+/* tabletmode */
+@media(max-width: 768px){
+    /* container */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 12vh;
+        left: 0px;
+        z-index: -1;
+    }
+/* img */
+    .img{
+     /* image position */
+     position: relative;
+     top: 0px;
+     left: 0px;
+     /* img size */
+     width: 250px;
+     height: 250px;
+    }
+
+/* content */
+    .content{
+    width: 90%;
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    }
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+}

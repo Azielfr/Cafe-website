@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/HTML,CSS,JAVA/CSS/flexbox.css">
+</head>
+<body>
+    <h1>Flexbox Day 3</h1>
+     <h3>Justify Content</h3>
+     <div class="container" id="justify">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<p>End</p>
+<div class="container" id="end">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<hr>
+<p>Center</p>
+<div class="container" id="center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<hr>
+<p>Space-around</p>
+<div class="container" id="Space-around">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<hr>
+<p>Space-between</p>
+<div class="container" id="Space-between">
+    <div class="box">1</div>
+    <div class="box">2</div>
+</div>
+<hr>
+<p>Space-evenly</p>
+<div class="container" id="Space-evenly">
+    <div class="box">1</div>
+    <div class="box">2</div>
+</div>
+<hr>
+     <h3>Algin items</h3>
+     <p>Start</p>
+     <div class="container" id="align-items">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+     </div>
+     <p>Flex-end</p>
+     <div class="container" id="flex-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+     </div>
+     <hr>
+     <p>Center</p>
+     <div class="container" id="align-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+     </div>
+     <hr>
+     <p>Stretch</p>
+     <div class="container" id="stretch">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+     </div>
+     <hr>
+ 
+     <h3>Flex Wrap</h3>
+     <!-- Flex wrap -this attribute is used to align items in  multiple line.
+      values:
+      norap - in a same line
+      wrap - in a multiple line
+      wrap - reverse - wrap in reverse -->
+      <p>nowrap</p>
+      <div class="container1" id="nowrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+      <hr>
+      <p>wrap</p>
+      <div class="container1" id="wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+      <hr>
+      <p>wrap-reverse</p>
+      <div class="container1" id="wrap-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+      <hr>
+
+      <h3>Align Self and order</h3>
+      <div class="container1">
+        <div class="box" style="order: 4;">1</div>
+        <div class="box" style="order: 3;">2</div>
+        <div class="box" style="order: 1;">3</div>
+        <div class="box" id="align-self" style="order: 2;">4</div>
+      </div>
+      <!-- align self - to arrange individual item in a cross axis.
+       order: to change to order of the item in a container.  -->
+      <hr>
+      <h3>Flex grow</h3>
+      <!-- flex grow can be used if the size of container is more than the total item size (sum of all items). -->
+      <div class="container2">
+        <div class="box">1</div>
+        <div class="box" id="fgrow1">2</div>
+        <div class="box" id="fgrow2">3</div>
+        <div class="box" id="fgrow3">4</div>
+        <div class="box">5</div>
+      </div>
+      <hr>
+      <h3>Flex shrink</h3>
+      <!-- flex shrink can be used if the constainer size is smaller than the total size of all item. -->
+      <div class="container3">
+        <div class="box">1</div>
+        <div class="box" id="fshrink1">2</div>
+        <div class="box" id="fshrink2">3</div>
+        <div class="box" id="fshrink3">4</div>
+        <div class="box">5</div>
+      </div>
+      <hr>
+</body>
+</html>

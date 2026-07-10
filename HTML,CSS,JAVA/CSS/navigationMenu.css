@@ -1,0 +1,88 @@
+/* Navigation Menu */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.link{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+li:hover{
+    text-decoration: solid underline 1px;
+    font-weight: 500px;
+}
+
+/* dropdown menu */
+.dropdown{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background-color: green;
+    list-style-type: none;
+    min-width: 120px;
+    display: none;
+}
+
+li:hover .dropdown{
+    display: block;
+}
+
+/* Gallery */
+main{
+    position: relative;
+    top: 10vh;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galleryitem{
+    width: 200px;
+    border: 1px solid gray;
+    margin: 5px;
+}
+
+img{
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.desc{
+    text-align: center;
+}
+
+.galleryitem:hover{
+    border-color: black;
+    box-shadow: 0px 0px 4px black;
+}
